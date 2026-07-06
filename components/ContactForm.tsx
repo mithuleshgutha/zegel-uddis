@@ -152,7 +152,7 @@ const ContactForm: React.FC = () => {
                     <option>Bulk Order / Party</option>
                     <option>Chocolate</option>
                     <option>Butterscotch</option>
-                    <option>Choco-Banana</option>
+                    <option>Banana Chocolate</option>
                     <option>Strawberry</option>
                     <option>Coffee</option>
                   </select>

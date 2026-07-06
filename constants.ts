@@ -25,7 +25,7 @@ export const FLAVORS: Flavor[] = [
   },
   {
     id: 'chocolate-banana',
-    name: 'Chocolate-Banana',
+    name: 'Banana Chocolate',
     tagline: 'Slip Into Sweetness',
     description: 'Creamy milk meets ripe banana in a disappearing act of flavor. It wiggles, it jiggles, and then—poof! It melts away, leaving a tropical smile.',
     colorHex: '#FDD835', // Yellow
@@ -61,5 +61,5 @@ export const FLAVORS: Flavor[] = [
 export const NAV_LINKS = [
   { name: 'Chocolate', href: '#chocolate' },
   { name: 'Butterscotch', href: '#butterscotch' },
-  { name: 'Choco-Banana', href: '#chocolate-banana' },
+  { name: 'Banana Chocolate', href: '#chocolate-banana' },
 ];

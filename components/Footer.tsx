@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li><a href="#chocolate" className="text-cream/80 hover:text-white hover:underline transition-all">Chocolate</a></li>
               <li><a href="#butterscotch" className="text-cream/80 hover:text-white hover:underline transition-all">Butterscotch</a></li>
-              <li><a href="#chocolate-banana" className="text-cream/80 hover:text-white hover:underline transition-all">Choco-Banana</a></li>
+              <li><a href="#chocolate-banana" className="text-cream/80 hover:text-white hover:underline transition-all">Banana Chocolate</a></li>
             </ul>
           </div>
         </div>
