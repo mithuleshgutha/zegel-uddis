@@ -1,28 +1,33 @@
 import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      base: '/zegel-uddis/',
-      server: {
-        port: 3000,
-        host: '0.0.0.0',
+export default defineConfig({
+  base: '/',
+  server: {
+    port: 3000,
+    host: '0.0.0.0',
+  },
+  plugins: [react(), tailwindcss()],
+  build: {
+    target: 'es2015',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
       },
-      plugins: [react()],
-      build: {
-        rollupOptions: {
-          input: {
-            main: path.resolve(__dirname, 'index.html'),
-          }
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          motion: ['framer-motion'],
         },
-        copyPublicDir: true
       },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
-      }
-    };
+    },
+    copyPublicDir: true,
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '.'),
+    },
+  },
 });

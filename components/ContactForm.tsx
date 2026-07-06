@@ -14,16 +14,38 @@ const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Replace with your Formspree endpoint after signup
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate network request
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSent(true);
-      setFormData({ name: '', email: '', phone: '', flavorOfInterest: 'General Inquiry', message: '' });
-      setTimeout(() => setIsSent(false), 5000);
-    }, 1500);
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          flavorOfInterest: formData.flavorOfInterest,
+          message: formData.message,
+        }),
+      });
+      if (response.ok) {
+        setIsSent(true);
+        setFormData({ name: '', email: '', phone: '', flavorOfInterest: 'General Inquiry', message: '' });
+        setTimeout(() => setIsSent(false), 5000);
+      } else {
+        alert("There was an error sending your enquiry. Please try again later.");
+      }
+    } catch (error) {
+      alert("There was an error sending your enquiry. Please try again later.");
+    }
+    setIsSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

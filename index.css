@@ -1,4 +1,26 @@
-/* 
- * Tailwind CSS is loaded via CDN in index.html
- * This file is created to prevent build-time warnings
- */
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: "DM Sans", sans-serif;
+  --font-family-serif: "Playfair Display", serif;
+  --color-chocolate: #5D4037;
+  --color-banana: #FBC02D;
+  --color-strawberry: #F48FB1;
+  --color-butterscotch: #FFB74D;
+  --color-coffee: #3E2723;
+  --color-cream: #FFF8E1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8E1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7CCC8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1887F;
+}

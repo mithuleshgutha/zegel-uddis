@@ -16,7 +16,7 @@ const App: React.FC = () => {
         
         {/* Render Flavor Sections Dynamically */}
         <div className="relative">
-          {FLAVORS.map((flavor, index) => (
+          {FLAVORS.filter(f => !['strawberry', 'coffee'].includes(f.id)).map((flavor) => (
             <div key={flavor.id} className="relative z-10">
                {/* Optional divider wave logic could go here if SVG libraries were used, keeping it clean for now */}
                <FlavorSection flavor={flavor} />
@@ -24,7 +24,7 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <ContactForm />
+        {/* <ContactForm /> */}
       </main>
 
       <Footer />

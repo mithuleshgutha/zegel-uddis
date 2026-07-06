@@ -29,13 +29,8 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" onClick={scrollToTop} className="flex flex-col leading-none group cursor-pointer">
-          <span className="text-2xl md:text-3xl font-serif font-black tracking-tighter text-chocolate">
-            Zegel<span className="text-butterscotch">.</span>
-          </span>
-          <span className="text-[0.5rem] md:text-[0.6rem] font-sans tracking-[0.2em] text-gray-500 uppercase group-hover:text-chocolate transition-colors">
-            by Uddis
-          </span>
+        <a href="#" onClick={scrollToTop} className="cursor-pointer">
+          <img src="/img/uddis-logo.png" alt="Uddis" className="h-10 md:h-12 w-auto" />
         </a>
 
         {/* Desktop Links */}
@@ -53,14 +48,14 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center space-x-4">
+        {/* <div className="hidden md:flex items-center space-x-4">
            <a
             href="#contact"
             className="px-5 py-2.5 bg-chocolate text-white text-sm font-semibold rounded-full hover:bg-opacity-90 transition-transform active:scale-95 shadow-lg"
           >
             Enquire Now
           </a>
-        </div>
+        </div> */}
 
         {/* Mobile Toggle */}
         <button
@@ -91,13 +86,13 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-             <a
+             {/* <a
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full max-w-xs px-5 py-4 bg-chocolate text-white text-center font-semibold rounded-xl shadow-md"
             >
               Enquire Now
-            </a>
+            </a> */}
           </div>
         </motion.div>
       )}

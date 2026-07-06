@@ -9,7 +9,7 @@ export const FLAVORS: Flavor[] = [
     colorHex: '#3E2723', // Dark Brown
     textColor: '#FFF8E1',
     accentColor: '#5D4037',
-    imageUrl: 'https://picsum.photos/800/800?random=1', // Placeholder
+    imageUrl: '/img/chocolate.png',
     direction: 'left'
   },
   {
@@ -20,7 +20,7 @@ export const FLAVORS: Flavor[] = [
     colorHex: '#FFCC80', // Orange/Gold
     textColor: '#E65100',
     accentColor: '#FFB74D',
-    imageUrl: 'https://picsum.photos/800/800?random=4',
+    imageUrl: '/img/butterscotch.png',
     direction: 'right'
   },
   {
@@ -31,7 +31,7 @@ export const FLAVORS: Flavor[] = [
     colorHex: '#FDD835', // Yellow
     textColor: '#3E2723',
     accentColor: '#FBC02D',
-    imageUrl: 'https://picsum.photos/800/800?random=2',
+    imageUrl: '/img/banana-chocolate.png',
     direction: 'left'
   },
   {
@@ -42,7 +42,7 @@ export const FLAVORS: Flavor[] = [
     colorHex: '#F8BBD0', // Pink
     textColor: '#880E4F',
     accentColor: '#F48FB1',
-    imageUrl: 'https://picsum.photos/800/800?random=3',
+    imageUrl: '/img/chocolare.png',
     direction: 'right'
   },
   {
@@ -53,7 +53,7 @@ export const FLAVORS: Flavor[] = [
     colorHex: '#4E342E', // Coffee Brown
     textColor: '#D7CCC8',
     accentColor: '#6D4C41',
-    imageUrl: 'https://picsum.photos/800/800?random=5',
+    imageUrl: '/img/chocolare.png',
     direction: 'left'
   }
 ];
@@ -62,6 +62,4 @@ export const NAV_LINKS = [
   { name: 'Chocolate', href: '#chocolate' },
   { name: 'Butterscotch', href: '#butterscotch' },
   { name: 'Choco-Banana', href: '#chocolate-banana' },
-  { name: 'Strawberry', href: '#strawberry' },
-  { name: 'Coffee', href: '#coffee' },
 ];

@@ -9,10 +9,7 @@ const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="space-y-6">
-            <div>
-              <h2 className="text-3xl font-serif font-bold">Zegel.</h2>
-              <span className="text-sm font-sans tracking-widest opacity-60 uppercase">By Uddis</span>
-            </div>
+            <img src="/img/uddis-logo.png" alt="Uddis" className="h-14 w-auto" />
             <p className="text-cream/80 max-w-xs leading-relaxed">
               We don't just make desserts; we engineer edible clouds. Our milk-based creations melt faster than your resolve to diet.
             </p>
@@ -35,18 +32,18 @@ const Footer: React.FC = () => {
             <div className="flex items-start space-x-4">
               <MapPin className="mt-1 flex-shrink-0" size={20} />
               <div className="text-cream/80">
-                <p>123 Melting Point Ave</p>
-                <p>Dessert District, CA 90210</p>
-                <p className="mt-2 text-sm text-cream/60">Open Daily: 10am - 9pm</p>
+                <p>Uddis Food Creations</p>
+                <p>13-176-7, Kakkalapalli</p>
+                <p>Anantapur, Andhra Pradesh 515004</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="flex-shrink-0" size={20} />
-              <p className="text-cream/80">+1 (555) 123-4567</p>
+              <a href="tel:+917287977899" className="text-cream/80 hover:text-cream transition-colors">+91 728 797 7899</a>
             </div>
             <div className="flex items-center space-x-4">
               <Mail className="flex-shrink-0" size={20} />
-              <p className="text-cream/80">hello@uddis.com</p>
+              <a href="mailto:contact@uddis.com" className="text-cream/80 hover:text-cream transition-colors">contact@uddis.com</a>
             </div>
           </div>
 
@@ -57,14 +54,12 @@ const Footer: React.FC = () => {
               <li><a href="#chocolate" className="text-cream/80 hover:text-white hover:underline transition-all">Chocolate</a></li>
               <li><a href="#butterscotch" className="text-cream/80 hover:text-white hover:underline transition-all">Butterscotch</a></li>
               <li><a href="#chocolate-banana" className="text-cream/80 hover:text-white hover:underline transition-all">Choco-Banana</a></li>
-              <li><a href="#strawberry" className="text-cream/80 hover:text-white hover:underline transition-all">Strawberry</a></li>
-              <li><a href="#coffee" className="text-cream/80 hover:text-white hover:underline transition-all">Coffee</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-cream/50">
-          <p>&copy; {new Date().getFullYear()} Uddis Brands. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Uddis Food Creations. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-cream">Privacy Policy</a>
             <a href="#" className="hover:text-cream">Terms of Service</a>
